@@ -1,0 +1,42 @@
+class Car {
+    
+    String make;
+    String model;
+    int year;
+
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    
+    public void displayDetails() {
+        System.out.println("Car Details: " + year + " " + make + " " + model);
+    }
+
+    
+    public void start() {
+        System.out.println(make + " " + model + " is starting...");
+    }
+
+    
+    public void stop() {
+        System.out.println(make + " " + model + " is stopping...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car("Toyota", "Corolla", 2020);
+        myCar.displayDetails();  
+        myCar.start();           
+        myCar.stop();            
+    }
+}
+
+
+
+Car Details: 2020 Toyota CoroOUTPUT:lla
+Toyota Corolla is starting...
+Toyota Corolla is stopping...
