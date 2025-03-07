@@ -10,7 +10,7 @@ class SBuffer
     System.out.println("Original string: "+sb);
     System.out.println("choose an operation: ");
     System.out.println("1.Delete the substring.");
-    System.out.println("1.Delete the character.");
+    System.out.println("2.Delete the character.");
     int choice=sc.nextInt();
     switch(choice)
     {
